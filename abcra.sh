@@ -1,8 +1,11 @@
-cd ..
-
 echo Please enter a name for a project.
-read -p 'Project Name: ' foldername
+read -p "Project Name[test]: " foldername
+foldername=${foldername:-test}
+echo Please enter the project save  location.
+read -p 'Project Save Location[cwd]: ' folderloc
+folderloc=${folderloc:-${PWD}}
 
+cd $folderloc
 mkdir $foldername
 cd $foldername
 
@@ -69,6 +72,7 @@ echo "
 }" >> .babelrc
 
 echo "
+
 Add these two lines under the scripts tag in package.json. The syntax is simliar to JSON so there should be a comma  after every line except the last.
 \"start\": \"webpack-dev-server .\",
 \"build\": \"webpack .\"

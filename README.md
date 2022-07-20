@@ -9,5 +9,4 @@ Currently allows you to specify the name of the project. The project is then cre
 
 
 TODO:
-- Automatically update script tags in package.json for webpack
-- Allow user to specify the location for the package to be created. Defautl behaviour should be to create it a level above. 
+- Automatically add script tags in package.json for webpack
