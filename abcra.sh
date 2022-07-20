@@ -68,8 +68,47 @@ module.exports = {
 
 echo "
 {
-    "presets": ["@babel/preset-env","@babel/preset-react"]
+   \"presets\": [\"@babel/preset-env\",\"@babel/preset-react\"]
 }" >> .babelrc
+
+
+echo "
+<!DOCTYPE html>
+<html lang=\"en\">
+<head>
+    <meta charset=\"UTF-8\">
+    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">
+    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
+    <title>React App</title>
+</head>
+<body>
+    <div id=\"root\"></div>
+</body>
+</html>
+" >> public/index.html
+
+echo "
+import React from \"react\";
+
+const App = () =>{
+    return (
+        <h1>
+            Hello world! I am using React
+        </h1>
+    )
+}
+
+export default App" >> src/App.js
+
+echo "
+import React from 'react'
+import  { createRoot }  from 'react-dom/client';
+import App from './src/App.js'
+
+const container = document.getElementById('root');
+const root = createRoot(container);
+root.render(<App/>);" >> index.js
+
 
 echo "
 
