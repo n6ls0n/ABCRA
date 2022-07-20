@@ -9,4 +9,4 @@ Currently allows you to specify the name of the project. The project is then cre
 
 
 TODO:
-- Automatically add script tags in package.json for webpack
+- Automatically add script tags in package.json for webpack, hint - "https://stackoverflow.com/questions/37500680/bash-how-to-insert-a-block-of-text-after-a-certain-line-into-a-file-in-unix"
