@@ -109,11 +109,13 @@ const container = document.getElementById('root');
 const root = createRoot(container);
 root.render(<App/>);" >> index.js
 
+sed -i '7s/$/,/' package.json
+sed -i '8i \\t"start":"webpack-dev-server .",\n\t"build": "webpack ."' package.json
 
-echo "
-*********************************************************************************************
-Add these two lines under the scripts tag in package.json. The syntax is simliar to JSON so there should be a comma  after every line except the last.
-\"start\": \"webpack-dev-server .\",
-\"build\": \"webpack .\"
-*********************************************************************************************
-" 
+# echo "
+# *********************************************************************************************
+# Add these two lines under the scripts tag in package.json. The syntax is simliar to JSON so there should be a comma  after every line except the last.
+# \"start\": \"webpack-dev-server .\",
+# \"build\": \"webpack .\"
+# *********************************************************************************************
+# " 
