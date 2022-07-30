@@ -111,8 +111,9 @@ root.render(<App/>);" >> index.js
 
 
 echo "
-
+*********************************************************************************************
 Add these two lines under the scripts tag in package.json. The syntax is simliar to JSON so there should be a comma  after every line except the last.
 \"start\": \"webpack-dev-server .\",
 \"build\": \"webpack .\"
+*********************************************************************************************
 " 
