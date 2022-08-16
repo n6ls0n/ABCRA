@@ -66,8 +66,7 @@ module.exports = {
 };
 " >> webpack.config.js
 
-echo 
-"
+echo "
 {
     \"presets\": [\"@babel/preset-env\", [\"@babel/preset-react\", { \"runtime\": \"automatic\" }]]
 }" >> .babelrc
