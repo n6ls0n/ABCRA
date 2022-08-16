@@ -66,11 +66,11 @@ module.exports = {
 };
 " >> webpack.config.js
 
-echo "
+echo 
+"
 {
-   \"presets\": [\"@babel/preset-env\",\"@babel/preset-react\"]
+    \"presets\": [\"@babel/preset-env\", [\"@babel/preset-react\", { \"runtime\": \"automatic\" }]]
 }" >> .babelrc
-
 
 echo "
 <!DOCTYPE html>
