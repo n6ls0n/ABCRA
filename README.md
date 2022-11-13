@@ -1,7 +1,7 @@
 Drawing inspiration from create-t3-app, like the name implies, this project aims to be a better version of CRA.
 It comes with good defaults for beginners and the ability to customize what you want added for seasoned devs. 
 
-To use:
+To use:\
 chmod +x install_upgrade
 
 `abcra` command can be called from anywhere that a project wants to be started
