@@ -6,6 +6,6 @@ chmod +x install_upgrade
 
 `abcra` command can be called from anywhere that a project wants to be started
 
-Features:\
+Features:
 1. Specificy name of project(Default: 'test') 
 2. Specificy save directory(Default: current working directory)
