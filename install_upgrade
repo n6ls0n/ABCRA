@@ -1,0 +1,10 @@
+#!/bin/bash
+###Install
+#Run this shell script to add the abcra.sh file to /usr/local/bin.
+
+###Upgrade
+#Run this shell script to override/update the abcra.sh file in /usr/local/bin
+
+sudo -s <<EOF
+cp abcra.sh /usr/local/bin
+EOF
